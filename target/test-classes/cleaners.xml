@@ -1,0 +1,13 @@
+<suite name="Cleaners" verbose="1" parallel="tests" thread-count="1">
+    <test name="Cleaner in Chrome" parallel="classes" thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="is_local" value="false"/>
+        <parameter name="site.url" value="http://siteurl.com/"/>
+        <parameter name="hub.url" value="http://216.38.137.42:4444/wd/hub"/>
+        <parameter name="candidates" value="user@email.com,user1@email.com"/>
+        <parameter name="staff" value="staff@user.com,staff2@user.com"/>
+        <packages>
+            <package name="com.example.tests.cleaners.*"/>
+        </packages>
+    </test>
+</suite>

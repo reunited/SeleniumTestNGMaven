@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38374" started-at="2015-07-03T00:18:13Z" finished-at="2015-07-03T00:18:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38374" started-at="2015-07-03T00:18:13Z" finished-at="2015-07-03T00:18:51Z">
+      <class name="edu.itu.bridge.tests.functional.title.F_LoginTest">
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeClass" is-config="true" duration-ms="4021" started-at="2015-07-02T17:18:13Z" finished-at="2015-07-02T17:18:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54d5da26]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://216.38.137.42:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://qa.bridge.itu.edu/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="497" started-at="2015-07-02T17:18:17Z" finished-at="2015-07-02T17:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInCandidateFooterFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInCandidateFooterFunctionalPositiveTest" duration-ms="3611" started-at="2015-07-02T17:18:18Z" finished-at="2015-07-02T17:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInCandidateFooterFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:21Z" finished-at="2015-07-02T17:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="359" started-at="2015-07-02T17:18:21Z" finished-at="2015-07-02T17:18:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInCandidateTopFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInCandidateTopFunctionalPositiveTest" duration-ms="2738" started-at="2015-07-02T17:18:22Z" finished-at="2015-07-02T17:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInCandidateTopFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-07-02T17:18:24Z" finished-at="2015-07-02T17:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="466" started-at="2015-07-02T17:18:24Z" finished-at="2015-07-02T17:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInCompanyFooterFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInCompanyFooterFunctionalPositiveTest" duration-ms="4878" started-at="2015-07-02T17:18:25Z" finished-at="2015-07-02T17:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInCompanyFooterFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:30Z" finished-at="2015-07-02T17:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="355" started-at="2015-07-02T17:18:30Z" finished-at="2015-07-02T17:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInCompanyTopFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInCompanyTopFunctionalPositiveTest" duration-ms="5105" started-at="2015-07-02T17:18:30Z" finished-at="2015-07-02T17:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInCompanyTopFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-07-02T17:18:35Z" finished-at="2015-07-02T17:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="359" started-at="2015-07-02T17:18:35Z" finished-at="2015-07-02T17:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInStaffFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInStaffFunctionalPositiveTest" duration-ms="4387" started-at="2015-07-02T17:18:35Z" finished-at="2015-07-02T17:18:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInStaffFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:40Z" finished-at="2015-07-02T17:18:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="379" started-at="2015-07-02T17:18:40Z" finished-at="2015-07-02T17:18:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_logInStaffTopFunctionalPositiveTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_logInStaffTopFunctionalPositiveTest" duration-ms="4071" started-at="2015-07-02T17:18:40Z" finished-at="2015-07-02T17:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_logInStaffTopFunctionalPositiveTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:44Z" finished-at="2015-07-02T17:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="350" started-at="2015-07-02T17:18:44Z" finished-at="2015-07-02T17:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_loginFooterFunctionalInvalidEmailTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_loginFooterFunctionalInvalidEmailTest" duration-ms="867" started-at="2015-07-02T17:18:45Z" finished-at="2015-07-02T17:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_loginFooterFunctionalInvalidEmailTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:46Z" finished-at="2015-07-02T17:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="297" started-at="2015-07-02T17:18:46Z" finished-at="2015-07-02T17:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_loginFooterFunctionalInvalidPasswordTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_loginFooterFunctionalInvalidPasswordTest" duration-ms="844" started-at="2015-07-02T17:18:46Z" finished-at="2015-07-02T17:18:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_loginFooterFunctionalInvalidPasswordTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:47Z" finished-at="2015-07-02T17:18:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="340" started-at="2015-07-02T17:18:47Z" finished-at="2015-07-02T17:18:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_loginTopFunctionalInvalidEmailTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_loginTopFunctionalInvalidEmailTest" duration-ms="852" started-at="2015-07-02T17:18:47Z" finished-at="2015-07-02T17:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_loginTopFunctionalInvalidEmailTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:48Z" finished-at="2015-07-02T17:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="beforeMethod" is-config="true" duration-ms="331" started-at="2015-07-02T17:18:48Z" finished-at="2015-07-02T17:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_loginTopFunctionalInvalidPasswordTest()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="f_loginTopFunctionalInvalidPasswordTest" duration-ms="881" started-at="2015-07-02T17:18:48Z" finished-at="2015-07-02T17:18:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_loginTopFunctionalInvalidPasswordTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-07-02T17:18:49Z" finished-at="2015-07-02T17:18:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:edu.itu.bridge.tests.functional.title.F_LoginTest@60ce717a]" name="afterClass" is-config="true" duration-ms="2364" started-at="2015-07-02T17:18:49Z" finished-at="2015-07-02T17:18:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- edu.itu.bridge.tests.functional.title.F_LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

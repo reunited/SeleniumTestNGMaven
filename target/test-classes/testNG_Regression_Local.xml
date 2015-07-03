@@ -1,0 +1,22 @@
+<suite name="Regression Automation Suite" verbose="1">
+    <test name="Full Regression Chrome" parallel="classes" thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="is_local" value="true"/>
+        <parameter name="site.url" value="http://siteurl.com/"/>
+        <parameter name="hub.url" value="http://216.38.137.42:4444/wd/hub"/>
+        <parameter name="candidates" value="user@test.com,user2@test.com"/>
+        <parameter name="staff" value="staff@user.com,staff2@user.com"/>
+        <packages>
+            <package name="com.example.test.tests.ui.*"/>
+            <package name="com.example.test.tests.functional.*"/>
+            <package name="com.example.test.cleaners.*"/>
+        </packages>  
+        <!--  <packages>
+          <package name="com.example.test.tests.ui.title"/>
+          <package name="com.example.test.tests.ui.staff"/>
+        </packages>   -->
+ <!--        <classes>
+        <class name = "com.example.test.tests.ui.title.UI_TitlePageTest"/>
+        </classes>  -->
+    </test>
+</suite>

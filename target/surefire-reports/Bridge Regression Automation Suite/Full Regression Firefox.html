@@ -1,0 +1,1406 @@
+<html>
+<head>
+<title>TestNG:  Full Regression Firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Full Regression Firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/17/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 05 13:03:54 PST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1295 seconds (1295396 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.A_F_AddNewRecordAllFieldsTypeInAndCancelIt()'><b>A_F_AddNewRecordAllFieldsTypeInAndCancelIt</b><br>Test class: edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.A_F_AddNewRecordAllFieldsTypeInAndCancelIt(F_ManageEducationInfoTest.java:75)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace918001409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918001409'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.A_F_AddNewRecordAllFieldsTypeInAndCancelIt(F_ManageEducationInfoTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>13</td>
+<td>edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest@49938039</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.A_F_EditCandidateProfilePageSetToAvailableForFullTimeAndNotVisible()'><b>A_F_EditCandidateProfilePageSetToAvailableForFullTimeAndNotVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.A_F_EditCandidateProfilePageSetToAvailableForFullTimeAndNotVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1869072125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1869072125'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.A_F_EditCandidateProfilePageSetToAvailableForFullTimeAndNotVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>21</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.B_F_AddNewRecordWithRequiredFieldsOnly()'><b>B_F_AddNewRecordWithRequiredFieldsOnly</b><br>Test class: edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [CandidateUniversity-zhJdsOcavAdfzvoCandidateUniversity-nPEVocMGQPIzxfI (LkCyHQlqdu, Barisal bibhag, Bangladesh)] but found [CandidateUniversity-nPEVocMGQPIzxfI (LkCyHQlqdu, Barisal bibhag, Bangladesh)]
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.B_F_AddNewRecordWithRequiredFieldsOnly(F_ManageEducationInfoTest.java:122)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace60365179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace60365179'><pre>java.lang.AssertionError: expected [CandidateUniversity-zhJdsOcavAdfzvoCandidateUniversity-nPEVocMGQPIzxfI (LkCyHQlqdu, Barisal bibhag, Bangladesh)] but found [CandidateUniversity-nPEVocMGQPIzxfI (LkCyHQlqdu, Barisal bibhag, Bangladesh)]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.B_F_AddNewRecordWithRequiredFieldsOnly(F_ManageEducationInfoTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>31</td>
+<td>edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest@49938039</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.C_F_AddNewRecordTypeAllFieldsAndSaveIt()'><b>C_F_AddNewRecordTypeAllFieldsAndSaveIt</b><br>Test class: edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [1985] but found [2009]
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.C_F_AddNewRecordTypeAllFieldsAndSaveIt(F_ManageEducationInfoTest.java:171)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515183889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515183889'><pre>java.lang.AssertionError: expected [1985] but found [2009]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.C_F_AddNewRecordTypeAllFieldsAndSaveIt(F_ManageEducationInfoTest.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>13</td>
+<td>edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest@49938039</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.C_F_EditCandidateProfilePageSetNotAvailableAndNotVisible()'><b>C_F_EditCandidateProfilePageSetNotAvailableAndNotVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.C_F_EditCandidateProfilePageSetNotAvailableAndNotVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:156)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace559022270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace559022270'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.C_F_EditCandidateProfilePageSetNotAvailableAndNotVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>19</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.D_F_ChekingErrorMesagesWhenRequiredFieldsAreEmpty()'><b>D_F_ChekingErrorMesagesWhenRequiredFieldsAreEmpty</b><br>Test class: edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div/div/div/form/div[3]/div[2]/div/div&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 962570d6-6797-49ab-a6c7-b7070d3c2243
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=962570d6-6797-49ab-a6c7-b7070d3c2243, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandiateTitlePageAddNewRecordPage.verifyErrorMessageUniversitySchoolField(CandiateTitlePageAddNewRecordPage.java:846)
+	at edu.itu.bridge.tests.functional.helpers.EducationManager.editEducationRecordEmptyUniversitySchoolField(EducationManager.java:202)
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.D_F_ChekingErrorMesagesWhenRequiredFieldsAreEmpty(F_ManageEducationInfoTest.java:220)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div/div/div/form/div[3]/div[2]/div/div&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous599042446365447353webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous599042446365447353webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1859958452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1859958452'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div/div/div/form/div[3]/div[2]/div/div&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 962570d6-6797-49ab-a6c7-b7070d3c2243
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=962570d6-6797-49ab-a6c7-b7070d3c2243, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandiateTitlePageAddNewRecordPage.verifyErrorMessageUniversitySchoolField(CandiateTitlePageAddNewRecordPage.java:846)
+	at edu.itu.bridge.tests.functional.helpers.EducationManager.editEducationRecordEmptyUniversitySchoolField(EducationManager.java:202)
+	at edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.D_F_ChekingErrorMesagesWhenRequiredFieldsAreEmpty(F_ManageEducationInfoTest.java:220)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div/div/div/form/div[3]/div[2]/div/div&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous599042446365447353webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous599042446365447353webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>25</td>
+<td>edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest@49938039</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.E_F_EditCandidateProfilePageSetNotAvailableAndVisible()'><b>E_F_EditCandidateProfilePageSetNotAvailableAndVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.16 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.E_F_EditCandidateProfilePageSetNotAvailableAndVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:185)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace802278903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace802278903'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.16 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.E_F_EditCandidateProfilePageSetNotAvailableAndVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>18</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.F_F_EditCandidateProfilePageSetAvailableForPartTimeAndVisible()'><b>F_F_EditCandidateProfilePageSetAvailableForPartTimeAndVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.F_F_EditCandidateProfilePageSetAvailableForPartTimeAndVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57521298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57521298'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 90409ee1-88c9-4d11-b61c-4a94a945cfda
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=90409ee1-88c9-4d11-b61c-4a94a945cfda, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePage.verifyResumeMoreInfoAvailabilityValueEquals(CandidateTitlePage.java:619)
+	at edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.F_F_EditCandidateProfilePageSetAvailableForPartTimeAndVisible(F_EditCandidateProfilePageAndSetDifferentStatusesTest.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div/div/div/div[1]/header/div[2]/div[2]/div[2]/div/div[1]/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous2472261002549756543webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>18</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_A_SubmitSupportTicketSignedInHeaderVerifyAndDeleteItTest()'><b>f_A_SubmitSupportTicketSignedInHeaderVerifyAndDeleteItTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCandidateSignedInFromHeader(SupportTicketManager.java:111)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_A_SubmitSupportTicketSignedInHeaderVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.java:45)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65769329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace65769329'><pre>java.lang.NullPointerException
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCandidateSignedInFromHeader(SupportTicketManager.java:111)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_A_SubmitSupportTicketSignedInHeaderVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest@744d76b4</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest()'><b>f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCandidateSignedInFromFooter(SupportTicketManager.java:133)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541425249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541425249'><pre>java.lang.NullPointerException
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCandidateSignedInFromFooter(SupportTicketManager.java:133)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCandidateVerifyAndDeleteItTest@744d76b4</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest()'><b>f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/footer/div/nav/a[5]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 9e74fb48-0317-4d2d-a7e9-488d3369689a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=9e74fb48-0317-4d2d-a7e9-488d3369689a, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at edu.itu.bridge.tests.pages.company.CompanySignUpProgressPage.clickOnFooterSupportElement(CompanySignUpProgressPage.java:841)
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCompanySignedInFromFooter(SupportTicketManager.java:173)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.java:58)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/footer/div/nav/a[5]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous7404061110619759456webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous7404061110619759456webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542143710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542143710'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/footer/div/nav/a[5]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 9e74fb48-0317-4d2d-a7e9-488d3369689a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=9e74fb48-0317-4d2d-a7e9-488d3369689a, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at edu.itu.bridge.tests.pages.company.CompanySignUpProgressPage.clickOnFooterSupportElement(CompanySignUpProgressPage.java:841)
+	at edu.itu.bridge.tests.functional.helpers.SupportTicketManager.SubmitTicketWhenCompanySignedInFromFooter(SupportTicketManager.java:173)
+	at edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.f_B_SubmitSupportTicketSignedInFooterVerifyAndDeleteItTest(F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/footer/div/nav/a[5]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous7404061110619759456webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous7404061110619759456webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>11</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest@20e183e9</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.positions.F_CandidateAddNewPositionIntoEmplymentHistoryTest.f_CandidateAddNewPositionIntoEmplymentHistory()'><b>f_CandidateAddNewPositionIntoEmplymentHistory</b><br>Test class: edu.itu.bridge.tests.functional.candidate.positions.F_CandidateAddNewPositionIntoEmplymentHistoryTest</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePageManagePositionsAdd.typeRandomSelectedInToStartDateMonth(CandidateTitlePageManagePositionsAdd.java:370)
+	at edu.itu.bridge.tests.functional.helpers.PositionManager.AddNewPositionFromCandidateTitlePageAndSetAsWorkingCurrently(PositionManager.java:33)
+	at edu.itu.bridge.tests.functional.candidate.positions.F_CandidateAddNewPositionIntoEmplymentHistoryTest.f_CandidateAddNewPositionIntoEmplymentHistory(F_CandidateAddNewPositionIntoEmplymentHistoryTest.java:36)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 23 more
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006817805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006817805'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePageManagePositionsAdd.typeRandomSelectedInToStartDateMonth(CandidateTitlePageManagePositionsAdd.java:370)
+	at edu.itu.bridge.tests.functional.helpers.PositionManager.AddNewPositionFromCandidateTitlePageAndSetAsWorkingCurrently(PositionManager.java:33)
+	at edu.itu.bridge.tests.functional.candidate.positions.F_CandidateAddNewPositionIntoEmplymentHistoryTest.f_CandidateAddNewPositionIntoEmplymentHistory(F_CandidateAddNewPositionIntoEmplymentHistoryTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 23 more
+</pre></div></td>
+<td>87</td>
+<td>edu.itu.bridge.tests.functional.candidate.positions.F_CandidateAddNewPositionIntoEmplymentHistoryTest@527736bd</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInCenterFunctionalPositiveTest()'><b>f_logInCenterFunctionalPositiveTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInCenterFunctionalPositiveTest(F_LoginTest.java:99)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499896209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499896209'><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInCenterFunctionalPositiveTest(F_LoginTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInFooterFunctionalPositiveTest()'><b>f_logInFooterFunctionalPositiveTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInFooterFunctionalPositiveTest(F_LoginTest.java:134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace140704565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace140704565'><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInFooterFunctionalPositiveTest(F_LoginTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInTopFunctionalPositiveTest()'><b>f_logInTopFunctionalPositiveTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInTopFunctionalPositiveTest(F_LoginTest.java:64)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace367513899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace367513899'><pre>java.lang.AssertionError: expected [ITU - Login] but found [ITU Bridge - The App]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:164)
+	at edu.itu.bridge.tests.functional.title.F_LoginTest.f_logInTopFunctionalPositiveTest(F_LoginTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_TitlePageLinksTest.f_titlePageLinksTest()'><b>f_titlePageLinksTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_TitlePageLinksTest</td>
+<td><div><pre>java.lang.AssertionError: expected [http://beta.bridge.itu.edu/companies/sign_up] but found [http://beta.bridge.itu.edu/]
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:165)
+	at edu.itu.bridge.tests.functional.title.F_TitlePageLinksTest.f_titlePageLinksTest(F_TitlePageLinksTest.java:54)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658128182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658128182'><pre>java.lang.AssertionError: expected [http://beta.bridge.itu.edu/companies/sign_up] but found [http://beta.bridge.itu.edu/]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at edu.itu.bridge.tests.base.BaseTest.checkTitleAndUrl(BaseTest.java:165)
+	at edu.itu.bridge.tests.functional.title.F_TitlePageLinksTest.f_titlePageLinksTest(F_TitlePageLinksTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+</pre></div></td>
+<td>8</td>
+<td>edu.itu.bridge.tests.functional.title.F_TitlePageLinksTest@60ded0f0</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest.ui_candidatePageUITest()'><b>ui_candidatePageUITest</b><br>Test class: edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;i.project-logo-icon&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 1263871d-5892-4ef5-98a5-c0b3bc55cace
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=1263871d-5892-4ef5-98a5-c0b3bc55cace, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePageHeader.verifyHeaderBridgeLogoIsDisplayed(CandidateTitlePageHeader.java:26)
+	at edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest.ui_candidatePageUITest(UI_CandidatePageTest.java:20)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;i.project-logo-icon&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous8166523447784062722webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous8166523447784062722webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726853985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726853985'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;i.project-logo-icon&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 1263871d-5892-4ef5-98a5-c0b3bc55cace
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=1263871d-5892-4ef5-98a5-c0b3bc55cace, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at edu.itu.bridge.tests.pages.candidate.CandidateTitlePageHeader.verifyHeaderBridgeLogoIsDisplayed(CandidateTitlePageHeader.java:26)
+	at edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest.ui_candidatePageUITest(UI_CandidatePageTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;i.project-logo-icon&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;EMS1-PC&apos;, ip: &apos;172.16.0.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ITUs-MacBook-Pro.local&apos;, ip: &apos;172.16.5.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous8166523447784062722webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/EMS1/AppData/Local/Temp/anonymous8166523447784062722webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></td>
+<td>10</td>
+<td>edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest@58e41bc3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.B_F_EditCandidateProfilePageSetToAvailableForPartTimeAndNotVisible()'><b>B_F_EditCandidateProfilePageSetToAvailableForPartTimeAndNotVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td></td>
+<td>8</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest.D_F_EditCandidateProfilePageSetToAvailableForFullTimeAndVisible()'><b>D_F_EditCandidateProfilePageSetToAvailableForFullTimeAndVisible</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest</td>
+<td></td>
+<td>8</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageAndSetDifferentStatusesTest@608b8a47</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest.E_F_EducationInfo()'><b>E_F_EducationInfo</b><br>Test class: edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest</td>
+<td></td>
+<td>16</td>
+<td>edu.itu.bridge.tests.functional.candidate.education.F_ManageEducationInfoTest@49938039</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest.f_A_SubmitSupportTicketSignedInAsCompanyHeaderVerifyAndDeleteItTest()'><b>f_A_SubmitSupportTicketSignedInAsCompanyHeaderVerifyAndDeleteItTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest</td>
+<td></td>
+<td>11</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketSignedInAsCompanyVerifyAndDeleteItTest@20e183e9</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.skills.F_CandidateSkillSetOverviewTest.f_CandidateIsAbleToOverviewAllSkills()'><b>f_CandidateIsAbleToOverviewAllSkills</b><br>Test class: edu.itu.bridge.tests.functional.candidate.skills.F_CandidateSkillSetOverviewTest</td>
+<td></td>
+<td>49</td>
+<td>edu.itu.bridge.tests.functional.candidate.skills.F_CandidateSkillSetOverviewTest@1395dd5b</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest.f_CompanySignUpCheckingEachRequiredFieldTest()'><b>f_CompanySignUpCheckingEachRequiredFieldTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest@e0d5eb7</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpTest.f_CompanySignUpCheckingEachRequiredFieldTest()'><b>f_CompanySignUpCheckingEachRequiredFieldTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpTest</td>
+<td></td>
+<td>6</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpTest@9ac5f13</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest.f_CompanySignUpInvalidEmailTest()'><b>f_CompanySignUpInvalidEmailTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest@e0d5eb7</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpTest.f_CompanySignUpInvalidEmailTest()'><b>f_CompanySignUpInvalidEmailTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpTest@9ac5f13</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest.f_CompanySignUpPasswordDoesntMatchErrorTest()'><b>f_CompanySignUpPasswordDoesntMatchErrorTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpNegativeTest@e0d5eb7</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpTest.f_CompanySignUpPasswordDoesntMatchErrorTest()'><b>f_CompanySignUpPasswordDoesntMatchErrorTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpTest@9ac5f13</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpHappyCaseTest.f_CompanySignUpPositiveTest()'><b>f_CompanySignUpPositiveTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpHappyCaseTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpHappyCaseTest@359b46dc</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.company.F_CompanySignUpTest.f_CompanySignUpPositiveTest()'><b>f_CompanySignUpPositiveTest</b><br>Test class: edu.itu.bridge.tests.functional.company.F_CompanySignUpTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.company.F_CompanySignUpTest@9ac5f13</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageCancelChangesAndVerifyChangesAreNotAppliedTest.f_EditCandidateProfilePageCancelChangesAndVerifyChangesAreNotApplied()'><b>f_EditCandidateProfilePageCancelChangesAndVerifyChangesAreNotApplied</b><br>Test class: edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageCancelChangesAndVerifyChangesAreNotAppliedTest</td>
+<td></td>
+<td>17</td>
+<td>edu.itu.bridge.tests.functional.candidate.profile.F_EditCandidateProfilePageCancelChangesAndVerifyChangesAreNotAppliedTest@552c8fa8</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginCenterFunctionalInvalidEmailTest()'><b>f_loginCenterFunctionalInvalidEmailTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginCenterFunctionalInvalidPasswordTest()'><b>f_loginCenterFunctionalInvalidPasswordTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginFooterFunctionalInvalidEmailTest()'><b>f_loginFooterFunctionalInvalidEmailTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginFooterFunctionalInvalidPasswordTest()'><b>f_loginFooterFunctionalInvalidPasswordTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginTopFunctionalInvalidEmailTest()'><b>f_loginTopFunctionalInvalidEmailTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.title.F_LoginTest.f_loginTopFunctionalInvalidPasswordTest()'><b>f_loginTopFunctionalInvalidPasswordTest</b><br>Test class: edu.itu.bridge.tests.functional.title.F_LoginTest</td>
+<td></td>
+<td>0</td>
+<td>edu.itu.bridge.tests.functional.title.F_LoginTest@14004204</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest.f_submitSupportTicketNotSignedInFooterVerifyAndDeleteTicketFunctionalTest()'><b>f_submitSupportTicketNotSignedInFooterVerifyAndDeleteTicketFunctionalTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest</td>
+<td></td>
+<td>8</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest@67dacccc</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest.f_submitSupportTicketNotSignedInHeaderVerifyAndDeleteTicketFunctionalTest()'><b>f_submitSupportTicketNotSignedInHeaderVerifyAndDeleteTicketFunctionalTest</b><br>Test class: edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest</td>
+<td></td>
+<td>7</td>
+<td>edu.itu.bridge.tests.functional.support.F_SubmitSupportTicketNotSignedInHeaderAndFooterVerifyAndDeleteTicketTest@67dacccc</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.candidate.UI_EditProfileInfoTest.ui_EditProfileInfo()'><b>ui_EditProfileInfo</b><br>Test class: edu.itu.bridge.tests.ui.candidate.UI_EditProfileInfoTest</td>
+<td></td>
+<td>42</td>
+<td>edu.itu.bridge.tests.ui.candidate.UI_EditProfileInfoTest@3e5dc994</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.candidate.UI_ManagePositionsTest.ui_ManagePositions()'><b>ui_ManagePositions</b><br>Test class: edu.itu.bridge.tests.ui.candidate.UI_ManagePositionsTest</td>
+<td></td>
+<td>24</td>
+<td>edu.itu.bridge.tests.ui.candidate.UI_ManagePositionsTest@65493102</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.company.UI_SignUpPageTest.ui_SignUpPageTest()'><b>ui_SignUpPageTest</b><br>Test class: edu.itu.bridge.tests.ui.company.UI_SignUpPageTest</td>
+<td></td>
+<td>4</td>
+<td>edu.itu.bridge.tests.ui.company.UI_SignUpPageTest@4178460d</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest.ui_StaffViewCandidatesPage()'><b>ui_StaffViewCandidatesPage</b><br>Test class: edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest</td>
+<td></td>
+<td>7</td>
+<td>edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest@69236cd5</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest.ui_StaffViewCompaniesPage()'><b>ui_StaffViewCompaniesPage</b><br>Test class: edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest</td>
+<td></td>
+<td>13</td>
+<td>edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest@69236cd5</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest.ui_StaffViewUsersPage()'><b>ui_StaffViewUsersPage</b><br>Test class: edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest</td>
+<td></td>
+<td>3</td>
+<td>edu.itu.bridge.tests.ui.staff.UI_StaffViewPageTest@69236cd5</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.candidate.UI_VerifySupportTicketWindowElementsSignedInTest.ui_VerifySupportTicketWindowElementsSignedInTest()'><b>ui_VerifySupportTicketWindowElementsSignedInTest</b><br>Test class: edu.itu.bridge.tests.ui.candidate.UI_VerifySupportTicketWindowElementsSignedInTest</td>
+<td></td>
+<td>5</td>
+<td>edu.itu.bridge.tests.ui.candidate.UI_VerifySupportTicketWindowElementsSignedInTest@3f3f210f</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_ForgotPasswordTest.ui_forgotPasswordPageUITestonly()'><b>ui_forgotPasswordPageUITestonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_ForgotPasswordTest</td>
+<td></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.ui.title.UI_ForgotPasswordTest@fc54796</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_CreateSupportTicketNotSignedHeaderAndFooterInTest.ui_titlePageCreateSupportTicketNotSignedInUIonly()'><b>ui_titlePageCreateSupportTicketNotSignedInUIonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_CreateSupportTicketNotSignedHeaderAndFooterInTest</td>
+<td></td>
+<td>9</td>
+<td>edu.itu.bridge.tests.ui.title.UI_CreateSupportTicketNotSignedHeaderAndFooterInTest@53f78b68</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_PrivacyPolicyTest.ui_titlePagePrivacyPolicyTest()'><b>ui_titlePagePrivacyPolicyTest</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_PrivacyPolicyTest</td>
+<td></td>
+<td>18</td>
+<td>edu.itu.bridge.tests.ui.title.UI_PrivacyPolicyTest@1cee1ede</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest.ui_titlePageSignInCenterUIonly()'><b>ui_titlePageSignInCenterUIonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest</td>
+<td></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest@2830ae41</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest.ui_titlePageSignInFooterUIonly()'><b>ui_titlePageSignInFooterUIonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest</td>
+<td></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest@2830ae41</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest.ui_titlePageSignInHeaderUIonly()'><b>ui_titlePageSignInHeaderUIonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest</td>
+<td></td>
+<td>1</td>
+<td>edu.itu.bridge.tests.ui.title.UI_SignInAllThreeCasesTest@2830ae41</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_TermsOfServiceTest.ui_titlePageTermsOfServiceTest()'><b>ui_titlePageTermsOfServiceTest</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_TermsOfServiceTest</td>
+<td></td>
+<td>2</td>
+<td>edu.itu.bridge.tests.ui.title.UI_TermsOfServiceTest@10aadc97</td></tr>
+<tr>
+<td title='edu.itu.bridge.tests.ui.title.UI_TitlePageTest.ui_titlePageUIonly()'><b>ui_titlePageUIonly</b><br>Test class: edu.itu.bridge.tests.ui.title.UI_TitlePageTest</td>
+<td></td>
+<td>52</td>
+<td>edu.itu.bridge.tests.ui.title.UI_TitlePageTest@3d47358f</td></tr>
+</table><p>
+</body>
+</html>

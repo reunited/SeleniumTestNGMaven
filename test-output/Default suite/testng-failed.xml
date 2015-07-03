@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="edu.itu.bridge.tests.functional.title.F_LoginTest">
+        <methods>
+          <include name="f_logInCandidateFooterFunctionalPositiveTest"/>
+          <include name="beforeClass"/>
+          <include name="f_loginFooterFunctionalInvalidEmailTest"/>
+          <include name="f_logInStaffFunctionalPositiveTest"/>
+          <include name="f_logInCompanyTopFunctionalPositiveTest"/>
+          <include name="f_logInCompanyFooterFunctionalPositiveTest"/>
+          <include name="f_logInCandidateTopFunctionalPositiveTest"/>
+          <include name="f_loginTopFunctionalInvalidPasswordTest"/>
+          <include name="f_loginFooterFunctionalInvalidPasswordTest"/>
+          <include name="f_loginTopFunctionalInvalidEmailTest"/>
+          <include name="f_logInStaffTopFunctionalPositiveTest"/>
+        </methods>
+      </class> <!-- edu.itu.bridge.tests.functional.title.F_LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Bridge Regression Automation Suite]">
+  <parameter name="hub.url" value="http://216.38.137.42:4444/wd/hub"/>
+  <parameter name="staff" value="automationstaff@itu.edu,automationstaff1@itu.edu,automationstaff2@itu.edu,automationstaff3@itu.edu,automationstaff4@itu.edu,automationstaff5@itu.edu,automationstaff6@itu.edu,automationstaff7@itu.edu,automationstaff8@itu.edu,automationstaff9@itu.edu"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="bridge.url" value="http://qa.bridge.itu.edu/"/>
+  <parameter name="is_local" value="true"/>
+  <parameter name="candidates" value="automationcandidate@itu.edu,automationcandidate1@itu.edu,automationcandidate2@itu.edu,automationcandidate3@itu.edu,automationcandidate4@itu.edu,automationcandidate5@itu.edu,automationcandidate6@itu.edu,automationcandidate7@itu.edu,automationcandidate8@itu.edu,automationcandidate9@itu.edu"/>
+  <test name="Full Regression Chrome(failed)" parallel="classes">
+    <parameter name="staff" value="automationstaff@itu.edu,automationstaff1@itu.edu,automationstaff2@itu.edu,automationstaff3@itu.edu,automationstaff4@itu.edu,automationstaff5@itu.edu,automationstaff6@itu.edu,automationstaff7@itu.edu,automationstaff8@itu.edu,automationstaff9@itu.edu"/>
+    <parameter name="hub.url" value="http://216.38.137.42:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="bridge.url" value="http://qa.bridge.itu.edu/"/>
+    <parameter name="candidates" value="automationcandidate@itu.edu,automationcandidate1@itu.edu,automationcandidate2@itu.edu,automationcandidate3@itu.edu,automationcandidate4@itu.edu,automationcandidate5@itu.edu,automationcandidate6@itu.edu,automationcandidate7@itu.edu,automationcandidate8@itu.edu,automationcandidate9@itu.edu"/>
+    <parameter name="is_local" value="true"/>
+    <classes>
+      <class name="edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="ui_ManagePositions"/>
+          <include name="afterClass"/>
+          <include name="UI_VerifyEmelentsOnEducationPage"/>
+        </methods>
+      </class> <!-- edu.itu.bridge.tests.ui.candidate.UI_CandidatePageTest -->
+    </classes>
+  </test> <!-- Full Regression Chrome(failed) -->
+</suite> <!-- Failed suite [Bridge Regression Automation Suite] -->

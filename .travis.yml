@@ -1,0 +1,20 @@
+language: java
+
+cache: apt
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq default-jdk maven
+
+env:
+  - JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
+
+script:
+  - travis_wait mvn package -Dtestng=testNG_travisCH_UI.xml
+  - travis_wait mvn package -Dtestng=testNG_travisCH_Func.xml
+  - travis_wait mvn package -Dtestng=cleaners.xml
+
+notifications:
+  hipchat:
+    rooms:
+      - WAq8NtncoOc0ed8XxHkplf258Dqgt9UZOjcsY4pY@987226
